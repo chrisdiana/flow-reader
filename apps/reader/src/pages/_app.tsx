@@ -2,7 +2,7 @@ import './styles.css'
 import 'react-photo-view/dist/react-photo-view.css'
 
 import { LiteralProvider } from '@literal-ui/core'
-import { ErrorBoundary } from '@sentry/nextjs'
+//import { ErrorBoundary } from '@sentry/nextjs'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { RecoilRoot } from 'recoil'
@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   if (router.pathname === '/success') return <Component {...pageProps} />
 
   return (
-    <ErrorBoundary fallback={<Fallback />}>
+  
       <LiteralProvider>
         <RecoilRoot>
           <Theme />
@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           </Layout>
         </RecoilRoot>
       </LiteralProvider>
-    </ErrorBoundary>
+ 
   )
 }
 
