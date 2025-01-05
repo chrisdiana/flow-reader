@@ -77,8 +77,8 @@ interface IViewAction extends IAction {
 
 const viewActions: IViewAction[] = [
   {
-    name: 'home',
-    title: 'home',
+    name: 'toc',
+    title: 'toc',
     Icon: MdHome,
     View: TocView,
     env: Env.Desktop | Env.Mobile,
