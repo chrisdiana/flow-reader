@@ -8,8 +8,9 @@ import {
   MdOutlineImage,
   MdSearch,
   MdToc,
+  MdHome,
   MdTimeline,
-  MdOutlineLightMode,
+  MdOutlineLightMode,    
 } from 'react-icons/md'
 import { RiFontSize, RiHome6Line, RiSettings5Line } from 'react-icons/ri'
 import { useRecoilState } from 'recoil'
@@ -75,6 +76,13 @@ interface IViewAction extends IAction {
 }
 
 const viewActions: IViewAction[] = [
+  {
+    name: 'home',
+    title: 'home',
+    Icon: MdHome,
+    View: TocView,
+    env: Env.Desktop | Env.Mobile,
+  },
   {
     name: 'toc',
     title: 'toc',

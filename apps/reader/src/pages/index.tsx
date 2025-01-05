@@ -328,7 +328,7 @@ const Library: React.FC = () => {
         </div>
       </div>
 
-      <div className="scroll h-full">
+      <div className="scroll h-full scroll-h">
         <ul
           className="grid"
           style={{
