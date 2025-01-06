@@ -114,3 +114,8 @@ p {
 .list-row:hover .action {
   display: block;
 }
+
+.h-full {
+  height: 100%;
+  overflow: auto;
+}
