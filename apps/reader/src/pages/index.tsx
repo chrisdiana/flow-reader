@@ -40,7 +40,7 @@ export default function Index() {
   const src = new URL(window.location.href).searchParams.get(SOURCE)
   const [loading, setLoading] = useState(!!src)
 
-  useDisablePinchZooming()
+  // useDisablePinchZooming()
 
   useEffect(() => {
     let src = router.query[SOURCE]
